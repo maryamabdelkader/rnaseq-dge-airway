@@ -17,6 +17,7 @@ Volcano plot and heatmap of top genes
 GO enrichment analysis with Enrichr (gseapy)
 Results
 PCA
+
 <img src="pca.png" width="550">
 
 The first PC mostly separates the cell lines, but within each cell line the treated sample is always lower than its control on PC2. Because the differences between donors are large, I included celltype in the DESeq2 design.
@@ -25,17 +26,21 @@ Differential expression
 
 Using padj < 0.05 and |log2FoldChange| > 1, I found 431 upregulated and 384 downregulated genes out of 19,271 tested genes.
 
+
 <img src="volcano_plot.png" width="550">
 
 Known glucocorticoid target genes like DUSP1, ZBTB16, KLF15, PER1 and CRISPLD2 were among the top genes.
 
 Top 30 genes
+
 <img src="heatmap.png" width="500">
 
 The top 30 genes clearly separate the treated and control samples.
 
 GO enrichment
+
 <img src="enrichment_up.png" width="600"> <img src="enrichment_down.png" width="600">
+
 Upregulated genes: negative regulation of cell migration, response to insulin and glucose import
 Downregulated genes: positive regulation of cell migration and axon guidance
 Conclusion
